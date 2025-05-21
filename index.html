@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Alejita</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Fuentes e iconos externos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Caveat&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/gato2.ico" type="Image/x-icon">
+</head>
+<body>
+    <!-- Burbujas animadas de fondo -->
+    <div class="bubbles"></div>
+    
+    <!-- Emojis flotantes -->
+    <div class="floating-emoji" style="top: 10%; left: 10%; font-size: 24px;">💖</div>
+    <div class="floating-emoji" style="top: 15%; right: 20%; font-size: 28px; animation-delay: 2s;">✨</div>
+    <div class="floating-emoji" style="bottom: 25%; left: 15%; font-size: 20px; animation-delay: 5s;">💌</div>
+    <div class="floating-emoji" style="bottom: 30%; right: 10%; font-size: 26px; animation-delay: 8s;">🌟</div>
+    
+    <!-- Contenedor de pulsaciones de amor -->
+    <div class="pulse-container">
+        <div class="pulse"></div>
+    </div>
+    
+    <!-- Lluvia de gatitos emojis -->
+    <div class="cats" id="cats-container"></div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1 class="title" id="title">Para Alejita</h1>
+            </div>
+            
+            <div class="message-container" id="message-container">
+                <!-- MENSAJE 1 -->
+                <div class="message active" data-title="Para Ti">
+                    <div class="message-content">
+                        <p class="message-text">Quiero decirte algo por este medio de detalle especial...</p>
+                        
+                        <p class="message-text">Espero disfrutes lo que hagas en Armenia, <span class="highlight">pásala super bien</span>. Te estaré esperando (o volveré a viajar).</p>
+                        
+                        <div class="heart-divider">
+                            <span>❤️</span>
+                        </div>
+                        
+                        <p class="message-text">Quiero que sepas que te pienso todos los días y te llevo siempre en mi corazón.</p>
+                    </div>
+                </div>
+                
+                <!-- MENSAJE 2 -->
+                <div class="message" data-title="Lo Que Significa Tu Sonrisa">
+                    <div class="message-content">
+                        <p class="message-text">Hay tantas cosas que me encantan de ti...</p>
+                        
+                        <p class="message-text">Me encanta tu sonrisa, que ilumina hasta el día más oscuro.</p>
+                        
+                        <p class="message-text">Admiro tu fortaleza y determinación frente a los desafíos.</p>
+                        
+                        <p class="message-text">Pero sobre todo, <span class="highlight">amo la forma en que me haces sentir</span> cuando estoy contigo.</p>
+                        
+                        <p class="message-text">Cada momento a tu lado es un regalo que atesoro profundamente.</p>
+                    </div>
+                </div>
+                
+                <!-- MENSAJE 3 -->
+                <div class="message" data-title="Momentos Importantes">
+                    <div class="message-content">
+                        <p class="message-text">¿Recuerdas todos esos momentos especiales que hemos compartido?</p>
+                        
+                        <p class="message-text">Cada uno de ellos está guardado en mi memoria como un tesoro.</p>
+                        
+                        <p class="message-text">Las risas, las conversaciones, los silencios cómplices...</p>
+                        
+                        <p class="message-text">Todo <span class="highlight">ha sido mágico a su manera</span>.</p>
+
+                        <p class="message-text">Cada uno de ellos está guardado en mi memoria como un tesoro.</p>
+
+                        <p class="message-text">Hasta el pequeñin de Nilo, ha formando parte de tu vida.</p>
+                        
+                        <div class="image-container polaroid">
+                            <!-- Imagen de recuerdo -->
+                            <img src="assets/recuerdo.jpg" alt="Recuerdo especial" class="special-image">
+                        </div>
+                        
+                        <p class="message-text">Espero que podamos crear muchos más recuerdos juntos.</p>
+                    </div>
+                </div>
+                
+                <!-- MENSAJE 4 -->
+                <div class="message" data-title="Mi Sentir">
+                    <div class="message-content">
+                        <p class="message-text">Quiero que sepas lo que siento por ti...</p>
+                        
+                        <p class="message-text">Mi corazón se acelera cuando te veo.</p>
+                        
+                        <p class="message-text">Mis pensamientos siempre encuentran el camino hacia ti.</p>
+                        
+                        <div class="quote">
+                            El amor no se trata de mirar el uno al otro, sino de mirar juntos en la misma dirección.
+                        </div>
+                        
+                        <p class="message-text">Y cada día, <span class="highlight">mis sentimientos crecen más y más</span>.</p>
+                    </div>
+                </div>
+                
+                <!-- MENSAJE 5 -->
+                <div class="message" data-title="Nuestro Camino">
+                    <div class="message-content">
+                        <p class="message-text">Cuando pienso en nosotros, pienso en un camino que estamos recorriendo juntos.</p>
+                        
+                        <p class="message-text">A veces será fácil, a veces tendrá desafíos, pero lo importante es que <span class="highlight">lo caminamos juntos</span>.</p>
+                        
+                        <p class="message-text">Contigo he aprendido a disfrutar cada paso del camino.</p>
+                        
+                        <p class="message-text">Por la distancia, los caminos se separan por momentos, pero siempre vuelven a encontrarse.</p>
+                    </div>
+                </div>
+                
+                <!-- MENSAJE 6 -->
+                <div class="message" data-title="Lo Que Me Inspiras">
+                    <div class="message-content">
+                        <p class="message-text">Tu presencia en mi vida ha cambiado todo.</p>
+                        
+                        <p class="message-text">Me inspiras a ser mejor persona cada día.</p>
+                        
+                        <p class="message-text">Contigo aprendo a valorar las pequeñas cosas, a disfrutar del presente y a soñar con el futuro.</p>
+                        
+                        <p class="message-text"><span class="highlight">Eres mi inspiración</span> y mi motivación para seguir adelante.</p>
+                        
+                        <p class="message-text">Gracias por ser exactamente como eres.</p>
+                    </div>
+                </div>
+                
+                <!-- MENSAJE 7 -->
+                <div class="message" data-title="Palabras del Corazón">
+                    <div class="message-content">
+                        <div class="poem">
+                            <span class="poem-line">En la distancia, mi corazón te siente cerca,</span>
+                            <span class="poem-line">Eres el pensamiento que me alegra cada día,</span>
+                            <span class="poem-line">La sonrisa que guardo en la memoria,</span>
+                            <span class="poem-line">Y el sueño dulce de cada noche.</span>
+                        </div>
+                        
+                        <p class="message-text">Estas palabras salen directamente de mi corazón.</p>
+                        
+                        <p class="message-text">Te pienso <span class="highlight">más de lo que imaginas</span>.</p>
+                    </div>
+                </div>
+                
+                <!-- MENSAJE 8 -->
+                <div class="message" data-title="Tu Ausencia">
+                    <div class="message-content">
+                        <p class="message-text">Cuando no estás, siento que falta una parte de mí.</p>
+                        
+                        <p class="message-text">Los días parecen más largos y las noches más silenciosas.</p>
+                        
+                        <p class="message-text">Pero saber que volveremos a vernos <span class="highlight">llena mi corazón de esperanza</span>.</p>
+                        
+                        <p class="message-text">Valoro cada mensaje, cada llamada, cada detalle que compartimos durante este tiempo en persona y en chat.</p>
+                        
+                        <p class="message-text">Son pequeños tesoros que me hacen sentir cerca de ti.</p>
+                    </div>
+                </div>
+                
+                <!-- MENSAJE 9 -->
+                <div class="message" data-title="Planes Futuros">
+                    <div class="message-content">
+                        <p class="message-text">Me encanta soñar con todos los momentos que aún nos quedan por vivir.</p>
+                        
+                        <p class="message-text">Los lugares que visitaremos, las aventuras que tendremos...</p>
+                        
+                        <p class="message-text">Cada plan a tu lado <span class="highlight">me llena de ilusión</span>.</p>
+                        
+                        <p class="message-text">No importa si son planes grandes o pequeños detalles cotidianos.</p>
+                        
+                        <p class="message-text">Lo importante es que estaremos juntos para disfrutarlos.</p>
+                    </div>
+                </div>
+                
+                <!-- MENSAJE 10 -->
+                <div class="message" data-title="De Mi Para Ti">
+                    <div class="message-content">
+                        <p class="message-text">Esta pequeña sorpresa es solo una forma de decirte...</p>
+                        
+                        <p class="message-text">Que eres alguien <span class="highlight">muy especial para mí</span>.</p>
+                        
+                        <p class="message-text">Que cada día agradezco estar contigo.</p>
+                        
+                        <p class="message-text">Que valoro cada momento que pasamos juntos.</p>
+                        
+                        <p class="message-text">Y que mi corazón está contigo, aunque estemos lejos un tiempo.</p>
+                        
+                        <div class="heart-divider">
+                            <span>❤️</span>
+                        </div>
+                        
+                        <p class="message-text final-message">¡Te quiero mucho! ❤️</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navegación entre mensajes -->
+            <div class="message-nav">
+                <button class="nav-btn" id="prev-btn" onclick="prevPage()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="page-indicator" id="page-indicator">
+                    <!-- Los indicadores de página se generarán dinámicamente -->
+                </div>
+                
+                <button class="nav-btn" id="next-btn" onclick="nextPage()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="buttons">
+                <button class="btn btn-primary" id="cats-btn" onclick="createCats()">
+                    <i class="fas fa-cat"></i> Enviar Gatitos
+                </button>
+                <button class="btn btn-secondary gift-btn" id="special-btn" onclick="showSpecialSurprise()">
+                    <i class="fas fa-gift"></i> Sorpresa
+                </button>
+            </div>
+            
+            <div class="theme-selector">
+                <div class="theme-option theme-pink active" data-theme="default" onclick="changeTheme(this)"></div>
+                <div class="theme-option theme-blue" data-theme="blue" onclick="changeTheme(this)"></div>
+                <div class="theme-option theme-sunset" data-theme="sunset" onclick="changeTheme(this)"></div>
+                <div class="theme-option theme-mint" data-theme="mint" onclick="changeTheme(this)"></div>
+                <div class="theme-option theme-dark" data-theme="dark" onclick="changeTheme(this)"></div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Hecho con ❤️ especialmente para ti</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="./utils/scripts.js"></script>
+</body>
+</html>
